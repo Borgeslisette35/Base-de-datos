@@ -17,30 +17,31 @@
   <style>
     /* ========================================================
        VARIABLES & PALETA DE COLORES (Colores.md)
-       Hex 1: #2596be (Teal Médico / Azul Estético)
-       Hex 2: #dec4a7 (Champagne Cálido / Beige Elegante)
+       Hex 1: #036666 (Teal Médico / Autoridad Estética)
+       Hex 2: #50C8B4 (Menta Esmeralda / Frescura y Vitalidad)
+       Fondo: #FFFFFF
        Font: Montserrat
        ======================================================== */
     :root {
-      --primary: #2596be;
-      --primary-dark: #1b7393;
-      --primary-light: #e8f5f9;
-      --primary-rgb: 37, 150, 190;
+      --primary: #036666;
+      --primary-dark: #024747;
+      --primary-light: #e6f4f4;
+      --primary-rgb: 3, 102, 102;
       
-      --secondary: #dec4a7;
-      --secondary-dark: #c5a683;
-      --secondary-light: #faf5ef;
-      --secondary-rgb: 222, 196, 167;
+      --secondary: #50c8b4;
+      --secondary-dark: #38a694;
+      --secondary-light: #eaf8f5;
+      --secondary-rgb: 80, 200, 180;
 
-      --text-main: #1e293b;
-      --text-muted: #64748b;
+      --text-main: #142a2a;
+      --text-muted: #597373;
       --bg-white: #ffffff;
-      --bg-soft: #fcfbfa;
-      --border-color: #ebdcd0;
+      --bg-soft: #f7fafa;
+      --border-color: #d8eded;
       
-      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 10px 25px -3px rgba(37, 150, 190, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
-      --shadow-lg: 0 20px 35px -5px rgba(37, 150, 190, 0.18), 0 10px 15px -5px rgba(222, 196, 167, 0.15);
+      --shadow-sm: 0 4px 6px -1px rgba(3, 102, 102, 0.05), 0 2px 4px -2px rgba(3, 102, 102, 0.04);
+      --shadow-md: 0 10px 25px -3px rgba(3, 102, 102, 0.12), 0 4px 10px -2px rgba(3, 102, 102, 0.04);
+      --shadow-lg: 0 20px 35px -5px rgba(3, 102, 102, 0.18), 0 10px 15px -5px rgba(80, 200, 180, 0.15);
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 22px;
@@ -104,19 +105,20 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
       color: #ffffff;
-      box-shadow: 0 8px 20px rgba(37, 150, 190, 0.35);
+      box-shadow: 0 8px 20px rgba(3, 102, 102, 0.35);
     }
 
     .btn-primary:hover {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, #13556d 100%);
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #012e2e 100%);
       transform: translateY(-2px);
-      box-shadow: 0 12px 24px rgba(37, 150, 190, 0.45);
+      box-shadow: 0 12px 24px rgba(3, 102, 102, 0.45);
     }
 
     .btn-secondary {
       background-color: var(--secondary);
-      color: #3f2e1e;
-      box-shadow: 0 6px 16px rgba(222, 196, 167, 0.4);
+      color: #023636;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(80, 200, 180, 0.35);
     }
 
     .btn-secondary:hover {
@@ -143,7 +145,7 @@
       z-index: 1000;
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(222, 196, 167, 0.4);
+      border-bottom: 1px solid rgba(80, 200, 180, 0.3);
       transition: var(--transition);
     }
 
@@ -166,7 +168,7 @@
       border-radius: 50%;
       border: 2px solid var(--secondary);
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(37, 150, 190, 0.15);
+      box-shadow: 0 4px 10px rgba(3, 102, 102, 0.15);
       background-color: var(--primary-light);
       display: flex;
       align-items: center;
@@ -282,8 +284,8 @@
     .hero-section {
       position: relative;
       padding: 80px 0 90px;
-      background: radial-gradient(circle at 10% 20%, rgba(222, 196, 167, 0.25) 0%, transparent 40%),
-                  radial-gradient(circle at 90% 80%, rgba(37, 150, 190, 0.15) 0%, transparent 40%),
+      background: radial-gradient(circle at 10% 20%, rgba(80, 200, 180, 0.18) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, rgba(3, 102, 102, 0.10) 0%, transparent 40%),
                   #ffffff;
       border-bottom: 1px solid var(--border-color);
       overflow: hidden;
@@ -304,7 +306,7 @@
       border-radius: var(--radius-full);
       background: var(--secondary-light);
       border: 1px solid var(--secondary);
-      color: #63472b;
+      color: var(--primary-dark);
       font-size: 0.82rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -320,12 +322,12 @@
       font-size: 3.1rem;
       font-weight: 800;
       line-height: 1.15;
-      color: #0f2430;
+      color: var(--text-main);
       margin-bottom: 20px;
     }
 
     .hero-title span {
-      background: linear-gradient(135deg, var(--primary) 0%, #15627e 100%);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary-dark) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -546,7 +548,7 @@
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
       margin: 24px 0 32px;
       font-style: italic;
-      color: #553e28;
+      color: var(--text-main);
       font-size: 0.98rem;
     }
 
@@ -608,7 +610,7 @@
       right: 22px;
       font-size: 2.2rem;
       font-weight: 900;
-      color: rgba(222, 196, 167, 0.45);
+      color: rgba(80, 200, 180, 0.4);
       line-height: 1;
     }
 
@@ -679,7 +681,7 @@
       font-weight: 700;
       border-radius: var(--radius-full);
       background: var(--secondary-light);
-      color: #553e28;
+      color: var(--text-main);
       border: 1px solid var(--secondary);
       cursor: pointer;
       transition: var(--transition);
@@ -802,7 +804,7 @@
       position: absolute;
       top: 14px;
       left: 14px;
-      background: rgba(37, 150, 190, 0.92);
+      background: rgba(3, 102, 102, 0.92);
       color: #ffffff;
       padding: 5px 12px;
       border-radius: var(--radius-full);
@@ -832,7 +834,7 @@
     /* ==================== CTA BANNER (IMAGEN POSTULACION) ==================== */
     .section-cta-banner {
       padding: 80px 0;
-      background: linear-gradient(135deg, #104255 0%, #1c7191 50%, #2596be 100%);
+      background: linear-gradient(135deg, #023636 0%, #036666 50%, #087f7f 100%);
       color: #ffffff;
       position: relative;
       overflow: hidden;
@@ -846,7 +848,7 @@
       width: 350px;
       height: 350px;
       border-radius: 50%;
-      background: rgba(222, 196, 167, 0.15);
+      background: rgba(80, 200, 180, 0.20);
       filter: blur(50px);
     }
 
@@ -862,7 +864,7 @@
     .cta-badge {
       display: inline-block;
       background: var(--secondary);
-      color: #422f1d;
+      color: #023636;
       padding: 6px 16px;
       border-radius: var(--radius-full);
       font-size: 0.78rem;
@@ -998,7 +1000,7 @@
     .form-control:focus {
       border-color: var(--primary);
       background-color: #ffffff;
-      box-shadow: 0 0 0 4px rgba(37, 150, 190, 0.15);
+      box-shadow: 0 0 0 4px rgba(80, 200, 180, 0.25);
     }
 
     textarea.form-control {
@@ -1095,7 +1097,7 @@
 
     /* ==================== FOOTER ==================== */
     .site-footer {
-      background-color: #0c1c24;
+      background-color: #022424;
       color: #f1f5f9;
       padding: 80px 0 35px;
       position: relative;
@@ -1144,7 +1146,7 @@
       justify-content: center;
       font-size: 1.1rem;
       transition: var(--transition);
-      border: 1px solid rgba(222, 196, 167, 0.2);
+      border: 1px solid rgba(80, 200, 180, 0.25);
     }
 
     .social-btn:hover {
@@ -1274,7 +1276,7 @@
 
     .crm-modal-header {
       padding: 24px 30px;
-      background: linear-gradient(135deg, var(--primary) 0%, #155770 100%);
+      background: linear-gradient(135deg, var(--primary) 0%, #024747 100%);
       color: #ffffff;
       display: flex;
       align-items: center;
