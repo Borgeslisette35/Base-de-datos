@@ -17,31 +17,31 @@
   <style>
     /* ========================================================
        VARIABLES & PALETA DE COLORES (Colores.md)
-       Hex 1: #036666 (Teal Médico / Autoridad Estética)
+       Hex 1: #003A42 (Verde Petróleo Oficial / Autoridad Estética)
        Hex 2: #50C8B4 (Menta Esmeralda / Frescura y Vitalidad)
        Fondo: #FFFFFF
        Font: Montserrat
        ======================================================== */
     :root {
-      --primary: #036666;
-      --primary-dark: #024747;
-      --primary-light: #e6f4f4;
-      --primary-rgb: 3, 102, 102;
+      --primary: #003a42;
+      --primary-dark: #00252b;
+      --primary-light: #e2f1f3;
+      --primary-rgb: 0, 58, 66;
       
       --secondary: #50c8b4;
       --secondary-dark: #38a694;
       --secondary-light: #eaf8f5;
       --secondary-rgb: 80, 200, 180;
 
-      --text-main: #142a2a;
-      --text-muted: #597373;
+      --text-main: #0f2327;
+      --text-muted: #536b70;
       --bg-white: #ffffff;
-      --bg-soft: #f7fafa;
-      --border-color: #d8eded;
+      --bg-soft: #f6fafa;
+      --border-color: #d3e7e8;
       
-      --shadow-sm: 0 4px 6px -1px rgba(3, 102, 102, 0.05), 0 2px 4px -2px rgba(3, 102, 102, 0.04);
-      --shadow-md: 0 10px 25px -3px rgba(3, 102, 102, 0.12), 0 4px 10px -2px rgba(3, 102, 102, 0.04);
-      --shadow-lg: 0 20px 35px -5px rgba(3, 102, 102, 0.18), 0 10px 15px -5px rgba(80, 200, 180, 0.15);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 58, 66, 0.05), 0 2px 4px -2px rgba(0, 58, 66, 0.04);
+      --shadow-md: 0 10px 25px -3px rgba(0, 58, 66, 0.12), 0 4px 10px -2px rgba(0, 58, 66, 0.04);
+      --shadow-lg: 0 20px 35px -5px rgba(0, 58, 66, 0.18), 0 10px 15px -5px rgba(80, 200, 180, 0.15);
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 22px;
@@ -105,18 +105,18 @@
     .btn-primary {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
       color: #ffffff;
-      box-shadow: 0 8px 20px rgba(3, 102, 102, 0.35);
+      box-shadow: 0 8px 20px rgba(0, 58, 66, 0.35);
     }
 
     .btn-primary:hover {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, #012e2e 100%);
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #00191c 100%);
       transform: translateY(-2px);
-      box-shadow: 0 12px 24px rgba(3, 102, 102, 0.45);
+      box-shadow: 0 12px 24px rgba(0, 58, 66, 0.45);
     }
 
     .btn-secondary {
       background-color: var(--secondary);
-      color: #023636;
+      color: #00252b;
       font-weight: 700;
       box-shadow: 0 6px 16px rgba(80, 200, 180, 0.35);
     }
@@ -168,7 +168,7 @@
       border-radius: 50%;
       border: 2px solid var(--secondary);
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(3, 102, 102, 0.15);
+      box-shadow: 0 4px 10px rgba(0, 58, 66, 0.15);
       background-color: var(--primary-light);
       display: flex;
       align-items: center;
@@ -285,7 +285,7 @@
       position: relative;
       padding: 80px 0 90px;
       background: radial-gradient(circle at 10% 20%, rgba(80, 200, 180, 0.18) 0%, transparent 40%),
-                  radial-gradient(circle at 90% 80%, rgba(3, 102, 102, 0.10) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, rgba(0, 58, 66, 0.10) 0%, transparent 40%),
                   #ffffff;
       border-bottom: 1px solid var(--border-color);
       overflow: hidden;
@@ -804,7 +804,7 @@
       position: absolute;
       top: 14px;
       left: 14px;
-      background: rgba(3, 102, 102, 0.92);
+      background: rgba(0, 58, 66, 0.92);
       color: #ffffff;
       padding: 5px 12px;
       border-radius: var(--radius-full);
@@ -834,7 +834,7 @@
     /* ==================== CTA BANNER (IMAGEN POSTULACION) ==================== */
     .section-cta-banner {
       padding: 80px 0;
-      background: linear-gradient(135deg, #023636 0%, #036666 50%, #087f7f 100%);
+      background: linear-gradient(135deg, #002227 0%, #003a42 50%, #005a66 100%);
       color: #ffffff;
       position: relative;
       overflow: hidden;
@@ -864,7 +864,7 @@
     .cta-badge {
       display: inline-block;
       background: var(--secondary);
-      color: #023636;
+      color: #00252b;
       padding: 6px 16px;
       border-radius: var(--radius-full);
       font-size: 0.78rem;
@@ -1097,7 +1097,7 @@
 
     /* ==================== FOOTER ==================== */
     .site-footer {
-      background-color: #022424;
+      background-color: #001a1e;
       color: #f1f5f9;
       padding: 80px 0 35px;
       position: relative;
@@ -1276,7 +1276,7 @@
 
     .crm-modal-header {
       padding: 24px 30px;
-      background: linear-gradient(135deg, var(--primary) 0%, #024747 100%);
+      background: linear-gradient(135deg, var(--primary) 0%, #00252b 100%);
       color: #ffffff;
       display: flex;
       align-items: center;
